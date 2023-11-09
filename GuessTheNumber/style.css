@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-image: url("./img/pexels-snapwire-618609.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container .start-btn {
+  justify-self: center;
+  position: absolute;
+  margin-inline: 50% auto;
+  transition: all 1s;
+  display: inline;
+  padding: 5px 25px;
+  outline: thick double rgb(0, 255, 30);
+  font-size: 4em;
+}
+@media screen and (max-width: 911px) {
+  .container .start-btn {
+    font-size: 2em;
+    margin-left: 15%;
+  }
+}
+.container .heading {
+  align-items: center;
+  font-size: 4em;
+  justify-self: center;
+  text-align: center;
+  font-weight: 600;
+  margin: 12px 20px;
+  padding: 5px 12px;
+  letter-spacing: 2px;
+  color: rgb(247, 33, 233);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.container .box {
+  width: 100%;
+  height: 20rem;
+}
+.container .box-2 .sub-box {
+  background-color: rgba(255, 255, 0, 0.365);
+  width: 50vw;
+  height: 90%;
+  outline: thick double rgb(48, 7, 142);
+  margin-inline: auto;
+  margin-block: 20px;
+  padding: 8px 10px;
+  font-size: 3em;
+  text-align: center;
+  line-height: 4;
+  color: white;
+  font-size: 5rem;
+  border-radius: 2px;
+  line-height: 1;
+}
+@media screen and (max-width: 911px) {
+  .container .box-2 .sub-box {
+    width: 75vw;
+    background-color: rgba(255, 255, 255, 0.662745098);
+  }
+}
+.container .box-3 .form {
+  outline: thin double orange;
+  border-radius: 9px;
+  background-color: rgba(10, 141, 151, 0.315);
+  width: 45%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-inline: auto;
+  margin-top: 25px;
+}
+.container .box-3 .form input {
+  width: 70%;
+  height: 40px;
+  padding: 7px 30px;
+  margin: 12px 10px;
+  border-radius: 12px;
+  border: none;
+  border: 1px dotted rgb(93, 89, 89);
+}
+.container .box-3 .form #btn {
+  margin: 12px;
+  padding: 6px 20px;
+  font-size: 2rem;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  color: rgb(174, 0, 255);
+  border-radius: 2px;
+  outline: thin doublergb(53, 114, 193);
+  border: none;
+  transition: 1s;
+}
+.container .box-3 #btn:hover {
+  background-color: transparent;
+  outline: thick double orange;
+}
+.container .box-3 #btn:checked {
+  background-color: blue;
+}
+.container .box-3 #btn:active {
+  background-color: red;
+}
+.container .box-3 #btn:visited {
+  background-color: green;
+}
+.container .box-3 #btn:focus {
+  background-color: pink;
+}
+
+@media screen and (min-width: 1255px) {
+  .heading {
+    margin-left: 50%;
+  }
+  .box {
+    padding-block: auto;
+  }
+}
+.showAnswer {
+  width: 100px;
+  height: 40px;
+  background-color: rgb(6, 10, 86);
+  border-radius: 32px;
+  color: orangered;
+  padding: 12px 15px;
+  margin: 5px;
+  font-size: 1.4em;
+  transition: 2s;
+}
+.showAnswer:hover {
+  background: rgb(113, 15, 198);
+}
+
+@media all and (max-width: 911px) {
+  body {
+    background-image: none;
+    background: linear-gradient(to left, blue, purple, black);
+  }
+}
+@media screen and (min-width: 1325px) {
+  .form {
+    height: 250px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .sub-box {
+    width: 75vw;
+  }
+}/*# sourceMappingURL=style.css.map */
