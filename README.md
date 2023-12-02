@@ -28,7 +28,7 @@ Before using or contributing to Project_Hunt, you should have the following prer
 
 ```bash
 git clone https://github.com/yourusername/Project_Hunt.git
-
+```
 
 Change to the project directory:
 
