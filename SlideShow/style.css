@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    /* width: 100%; */
+    height: 100vh;
+    /* background: black; */
+}
+.box{
+    overflow: hidden;
+    width: 35vw;
+    height: 40vh;
+    
+    border: 2px solid black;
+    margin-top: 50px;
+    margin-inline: auto;
+    /* display: flex; */
+    position: relative;
+
+}
+.imgs{
+    position: absolute;
+width: 100% ;
+height: 100%;
+/* margin: 10px; */
+/* left: 0;transform: ; */
+object-fit: cover;
+
+}
+.buton{
+    font-size: 20px;
+    padding: 7px 10px;
+    position: relative;
+    top: -400px;
+    left: 50%;
+    transform:translateX(-50%);
+    margin: 10px;
+}

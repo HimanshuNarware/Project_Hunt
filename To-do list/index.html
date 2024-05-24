@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<style>
+
+</style>
+
+<body>
+    <script src="index.js"></script>
+
+
+    <div class="container">
+        <div id="h1"></div>
+        <div class="to-do">
+            <h1> to do list</h1>
+            <div class="row">
+                <input type="text" id="input" class="input">
+                <button id="btn">add</button>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="wrapper">
+        <ul  id="list">
+            <!-- <li>t</li>
+            <li>t</li>
+            <li>t</li> -->
+        </ul>
+    </div>
+ 
+
+
+
+    <script>
+        let btn = document.getElementById('btn');
+        let input = document.getElementById("input")
+
+
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            if (input.value == "") alert("please enter something");
+            
+
+            else {
+                let li = document.createElement("li");
+                let li_data = document.createTextNode(input.value)
+                
+                li.appendChild(li_data);
+                document.getElementById("list").appendChild(li)
+            }
+        })
+
+    let test=document.getElementById('h1')
+
+    let cssAfter=window.getComputedStyle(h1,'::after');
+    console.log("checkt thie")
+//   cssAfter.backgroundColor="black"
+h1.style.setProperty('--color','green')
+
+//         var color = window.getComputedStyle(
+// 	document.querySelector('.h1'), ':after'
+// ).getPropertyValue('color').toEqual('rgb(196, 26, 35)');
+
+// console.log(color);
+// color
+
+        // add local storage feature
+
+    </script>
+</body>
+
+</html>
